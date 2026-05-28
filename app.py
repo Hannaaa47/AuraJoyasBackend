@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.secret_key = os.getenv("SECRET_KEY", "clave_temporal_desarrollo")
 
 CORS(app, supports_credentials=True, 
-origins=["http://localhost:5173", "https://aura-joyas.vercel.app")
+origins=["http://localhost:5173", "https://aura-joyas.vercel.app"])
 
 @app.route("/")
 def inicio():
